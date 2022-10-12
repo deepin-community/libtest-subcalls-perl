@@ -1,0 +1,64 @@
+libtest-subcalls-perl (1.10-1) unstable; urgency=medium
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+  * New upstream release.
+  * Add debian/upstream/metadata.
+  * Update upstream Contact/Maintainer.
+  * debian/copyright: drop stanza about removed files.
+  * debian/copyright: switch formatting to Copyright-Format 1.0.
+  * Declare compliance with Debian Policy 4.1.2.
+  * Bump debhelper compatibility level to 9.
+  * Install new CONTRIBUTING document.
+  * Add /me to Uploaders.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 26 Dec 2017 20:28:41 +0100
+
+libtest-subcalls-perl (1.09-2) unstable; urgency=low
+
+  * Team Upload.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Changed: Replace versioned (build-)dependency on
+    perl (>= 5.6.0-{12,16}) with an unversioned dependency on perl (as
+    permitted by Debian Policy 3.8.3).
+
+  [ Ryan Niebur ]
+  * Update jawnsy's email address
+
+  [ Ansgar Burchardt ]
+  * Do not run author tests. See also #589052.
+    * Remove build-dep on libtest-cpan-meta-perl, libtest-pod-perl,
+      libpod-simple-perl, libtest-minimumversion-perl.
+  * Use source format 3.0 (quilt).
+  * debian/copyright: Formatting changes for current DEP-5 proposal.
+  * Bump Standards-Version to 3.9.0.
+
+ -- Ansgar Burchardt <ansgar@43-1.org>  Thu, 15 Jul 2010 23:10:56 +0900
+
+libtest-subcalls-perl (1.09-1) unstable; urgency=low
+
+  * Initial Release (Closes: #539783)
+
+ -- Jonathan Yu <frequency@cpan.org>  Mon, 03 Aug 2009 08:25:48 -0400

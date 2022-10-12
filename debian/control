@@ -1,0 +1,24 @@
+Source: libtest-subcalls-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: perl,
+                     libhook-lexwrap-perl
+Standards-Version: 4.1.2
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libtest-subcalls-perl.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-perl/packages/libtest-subcalls-perl.git
+Homepage: https://metacpan.org/release/Test-SubCalls
+
+Package: libtest-subcalls-perl
+Architecture: all
+Depends: ${perl:Depends},
+         ${misc:Depends},
+         libhook-lexwrap-perl
+Description: Perl module to count subroutine calls
+ Test::SubCalls provides functions for testing that subroutines are called a
+ specific number of times. It is useful in situations like testing caching
+ code, where you want to do some tests as normal and then verify that some
+ underlying subroutine within the code was called a specific number of times.
